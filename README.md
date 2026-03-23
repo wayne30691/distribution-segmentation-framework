@@ -12,9 +12,7 @@ The output is a four-quadrant matrix that supports distributor segmentation, imp
 
 ![Criterias Assessed](./images/screenshot3.png)
 
-![Distributor Accessment](./images/screenshot2.png)
-
-![Distributor Matrix](./images/screenshot1.png)
+![Distributor Matrix](./images/screenshot2.png)
 
 ---
 
