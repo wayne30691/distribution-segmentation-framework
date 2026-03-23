@@ -1,4 +1,4 @@
-# Distributor Segmentation Framework
+# Distributor Segmentation Matrix
 
 A structured distributor assessment and segmentation framework designed to support incentive differentiation and strategic decision-making.
 
@@ -8,103 +8,113 @@ A structured distributor assessment and segmentation framework designed to suppo
 
 This project transforms fragmented distributor evaluation into a standardized, data-driven framework by combining quantitative and qualitative criteria into a unified scoring model.
 
-The output is a four-quadrant matrix that supports distributor segmentation and guides incentive allocation decisions.
+The output is a four-quadrant matrix that supports distributor segmentation, improves transparency, and enables more consistent and objective decision-making.
+
+![Criterias Assessed](./images/screenshot3.png)
+
+![Distributor Accessment](./images/screenshot2.png)
+
+![Distributor Matrix](./images/screenshot1.png)
 
 ---
 
-## Business Problem
+## Business Context
 
 Distributor evaluation and incentive allocation were previously:
 
 - based on fragmented data and subjective judgment  
-- lacking a consistent and comparable framework  
+- lacking a consistent and scalable evaluation framework  
 - difficult to align with strategic priorities  
-- not scalable across multiple distributors  
+- not comparable across distributors  
+
+This project was designed to establish a structured assessment approach that links distributor evaluation directly to segmentation and incentive differentiation.
 
 ---
 
-## Solution
+## Assessment Framework
 
-Designed a structured assessment framework and segmentation model to standardize distributor evaluation.
+The distributor evaluation framework is designed to provide a structured and consistent approach to assess partner performance, capability, and strategic potential.
 
-- Built scoring logic combining performance and capability  
-- Transformed qualitative inputs into structured evaluation criteria  
-- Standardized distributor comparison across dimensions  
-- Linked segmentation results to incentive differentiation  
+The model integrates multiple dimensions, including:
 
----
+- Business size and growth potential  
+- Willingness to collaborate and strategic alignment  
+- Route-to-market structure and coverage  
+- Ways of working and operational discipline  
+- Execution capabilities across channels  
 
-## Framework Design
+Each dimension is decomposed into a set of clearly defined criteria and translated into a standardized scoring model.  
+Qualitative inputs are systematically structured and quantified to reduce subjectivity and ensure comparability across distributors.
 
-The assessment logic is documented in the Excel file:
-
-- **Assessment Distributor**  
-  Contains detailed scoring criteria, dimensions, and evaluation logic  
-
-- **Distributor Matrix**  
-  Contains final scoring results and segmentation output  
+The detailed criteria, scoring logic, and weighting methodology are documented in the **"Criterias assessed"** sheet.
 
 ---
 
-## Methodology
+## Scoring Approach
 
-Key dimensions used in the assessment:
+The framework converts multi-dimensional inputs into a unified scoring structure:
 
-- Business size and potential  
-- Willingness to collaborate  
-- Route-to-market setup  
-- Ways of working  
-- Execution capabilities  
+- Standardized scoring scales are applied across all criteria  
+- Weighted aggregation reflects the relative importance of each dimension  
+- Qualitative assessments are codified into measurable indicators  
+- Final scores are normalized to enable cross-distributor comparison  
 
-Qualitative inputs were converted into structured scoring logic to enable consistent comparison.
+This ensures that evaluation is transparent, repeatable, and aligned with business priorities.
 
 ---
 
-## Output
+## Segmentation Logic
 
-The result is a **four-quadrant matrix**:
+The aggregated scores are mapped into a two-dimensional matrix:
+
+- **X-axis**: Business size and potential  
+- **Y-axis**: Capability and execution strength  
+
+Distributors are segmented into four strategic groups:
 
 - High potential / High capability → Strategic partners  
 - High potential / Low capability → Development focus  
 - Low potential / High capability → Efficiency optimization  
-- Low potential / Low capability → Maintain / review  
+- Low potential / Low capability → Maintain or review  
+
+This segmentation provides a clear and actionable framework for aligning incentive allocation with strategic priorities.
 
 ---
 
-## Visualization
+## Data & Files
 
-![Distributor Matrix](./images/distributor_matrix.png)
+- **Excel Workbook**
+  - `Criterias assessed` → detailed criteria and scoring methodology  
+  - `Assessment Distributor` → structured scoring and evaluation logic  
+  - `Distributor Matrix` → final scoring results and segmentation  
 
-The matrix is generated using Python to ensure consistency and reproducibility.
+- **Python Script**
+  - used to generate the four-quadrant visualization  
 
 ---
 
-## Files
+## Methodology Summary
 
-- `data/`  
-  Sample input dataset (anonymized)
+This project demonstrates how:
 
-- `src/plot_matrix.py`  
-  Python script to generate the four-quadrant matrix
-
-- `images/`  
-  Output visualization
-
-- `docs/`  
-  Additional explanation of framework design
+- qualitative and quantitative inputs can be unified into a structured evaluation model  
+- subjective assessments can be standardized into measurable scoring logic  
+- distributor comparison can be made consistent and scalable  
+- segmentation outputs can directly support strategic decision-making  
 
 ---
 
 ## My Role
 
-- Designed the distributor assessment framework  
-- Structured qualitative and quantitative criteria into a scoring model  
-- Translated business logic into Python-based analysis and visualization  
-- Built segmentation output to support incentive and strategy discussions  
+- Designed the end-to-end distributor assessment framework  
+- Structured qualitative and quantitative criteria into a standardized scoring model  
+- Translated business evaluation logic into data-driven methodology  
+- Developed Python-based visualization for segmentation output  
+- Facilitated alignment with commercial stakeholders for practical adoption  
 
 ---
 
-## Tools
+## Tech Stack
 
 Python · Pandas · Data Visualization · Excel  
 
@@ -113,3 +123,5 @@ Python · Pandas · Data Visualization · Excel
 ## Notes
 
 All data in this repository is anonymized and does not represent actual business data.
+
+The framework is designed to be scalable and can be extended into control tower environments for ongoing performance monitoring.
